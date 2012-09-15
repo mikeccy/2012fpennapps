@@ -67,6 +67,27 @@ if ($user) {
 // This call will always work since we are fetching public data.
 // $naitik = $facebook->api('/naitik');
 
+// mysql test
+$mysql_username = 'mikeccy_pennapps';
+$mysql_password = '2012fpennapps';
+$mysql_server = 'localhost';
+$mysql_database = 'mysql_pennapps';
+$mysql_connection = mysql_connect($mysql_server, $mysql_username, $mysql_password);
+
+if ($mysql_connection) {
+    $mysql_dataconnection = mysql_select_db($mysql_database);
+    if ($mysql_dataconnection) {
+    
+    } else {
+	die('get database failed');
+}
+} else {
+    die('mysql connection failed');
+}
+
+// mysql test table
+
+
 ?>
 <!doctype html>
 <html xmlns:fb="http://www.facebook.com/2008/fbml">
