@@ -72,7 +72,7 @@ if ($user) {
 $mysql_username = 'mikeccy_pennapps';
 $mysql_password = '2012fpennapps';
 $mysql_server = 'localhost';
-$mysql_database = 'mysql_pennapps';
+$mysql_database = 'mikeccy_pennapps';
 $mysql_connection = mysql_connect($mysql_server, $mysql_username, $mysql_password);
 
 if ($mysql_connection) {
